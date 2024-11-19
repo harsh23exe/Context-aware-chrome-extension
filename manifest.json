@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Smart To-Do List and Recommendations",
+    "version": "1.0",
+    "description": "Reads content from active tabs, groups tabs, and generates a to-do list with recommended links.",
+    "permissions": [
+      "tabs", 
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "options_page": "options.html"
+  }
